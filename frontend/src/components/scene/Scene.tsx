@@ -4,7 +4,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import { EffectComposer, Bloom } from "@react-three/postprocessing";
 import ArcReactorCore from "./ArcReactorCore";
-import TangledOrbitField from "./TangledOrbitField";
+
 
 export default function Scene({ isBooting = false }: { isBooting?: boolean }) {
   return (
@@ -13,7 +13,7 @@ export default function Scene({ isBooting = false }: { isBooting?: boolean }) {
       <ambientLight intensity={0.15} />
 
       <ArcReactorCore isBooting={isBooting} />
-      <TangledOrbitField />
+      
 
       <EffectComposer>
         <Bloom

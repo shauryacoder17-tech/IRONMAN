@@ -8,6 +8,14 @@ type LandingProps = {
 export default function Landing({ onActivate, isBooting }: LandingProps) {
   return (
     <div className="relative h-screen w-screen overflow-hidden bg-[#020817] text-white">
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 h-full w-full object-cover opacity-30"
+        src="/jarvis-demo.mp4"
+      />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(34,211,238,0.18),_rgba(2,6,23,0)_55%)]" />
 
       <div className="relative z-10 mx-auto flex h-full max-w-6xl flex-col items-center justify-center gap-8 px-6 text-center lg:flex-row lg:justify-between lg:text-left">
